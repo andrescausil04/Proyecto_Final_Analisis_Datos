@@ -3,7 +3,7 @@
  * Breast Cancer Wisconsin — Predictor con Regresión Logística y RNA
  */
 
-const API_URL = 'http://localhost:5000';
+const API_URL = window.location.origin;
 
 const FEAT_NAMES = {
   radius:'Radio', texture:'Textura', perimeter:'Perímetro', area:'Área',

@@ -18,7 +18,13 @@ from sklearn.metrics import (
 )
 import os
 
-app = Flask(__name__)
+from flask import render_template
+
+app = Flask(
+    _name_,
+    static_folder='../frontend',
+    template_folder='../frontend'
+)
 CORS(app)  # Permite peticiones desde el frontend (GitHub Pages)
 
 # ── Rutas a los modelos guardados ────────────────────────────
