@@ -21,7 +21,7 @@ import os
 from flask import render_template
 
 app = Flask(
-    _name_,
+    __name__,
     static_folder='../frontend',
     template_folder='../frontend'
 )
