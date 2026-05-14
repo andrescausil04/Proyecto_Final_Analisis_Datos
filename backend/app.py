@@ -28,7 +28,7 @@ app = Flask(
 CORS(app)  # Permite peticiones desde el frontend (GitHub Pages)
 @app.route("/")
 def home():
-    return "API funcionando correctamente "
+    return render_template("index.html")
 
 # ── Rutas a los modelos guardados ────────────────────────────
 BASE = os.path.join(os.path.dirname(__file__), '..', 'modelos', 'guardados')
